@@ -1,0 +1,140 @@
+/* Estilos Gerais */
+body {
+    background-color: #fdeff2; /* Fundo Rosa Claro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex; 
+    justify-content: center;
+    padding: 30px 0; 
+    min-height: 100vh;
+    margin: 0;
+    
+    /* PADRÃO DE CORAÇÕES */
+    background-image: radial-gradient(circle at 100% 150%, #f0c0c0 24%, #fdeff2 25%, #fdeff2 28%, #f0c0c0 29%, #f0c0c0 36%, #fdeff2 36%, #fdeff2 40%, transparent 40%, transparent);
+    background-size: 80px 80px;
+}
+
+/* O Cartão Central */
+.cartao {
+    background-color: white; 
+    color: #333; 
+    width: 450px; 
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Header, Foto e Títulos */
+.header-card {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.foto-perfil img {
+    /* ALTERAÇÃO AQUI: AUMENTANDO LARGURA E ALTURA */
+    width: 160px; 
+    height: 160px; 
+    /* Aumentei a borda para 6px para harmonizar com o novo tamanho */
+    border: 6px solid #e76f87; /* Cor de acentuação: Rosa Mais Vivo */
+    
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.2em;
+    color: #444;
+    margin: 10px 0 5px 0;
+}
+
+.subtitulo {
+    color: #a0a0a0;
+    margin-bottom: 15px;
+}
+
+/* Estilos dos Contadores (Estáticos) */
+.contadores {
+    width: 100%; 
+    margin: 20px 0; 
+    padding: 15px;
+    background-color: #fff8f8; 
+    border-radius: 12px;
+    border: 1px dashed #e76f87; 
+}
+
+.contadores h2 {
+    font-size: 0.9em;
+    color: #e76f87; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 5px 0;
+}
+
+#tempo-namoro {
+    font-size: 1.2em; 
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+/* Mensagem de Amor */
+.mensagem {
+    font-size: 1.1em;
+    color: #555;
+    margin: 20px 0 30px 0;
+    font-style: italic;
+    border-top: 1px solid #ffedf0; 
+    padding-top: 20px;
+}
+
+/* --- ESTILOS DA GALERIA DE FOTOS --- */
+.galeria-fotos {
+    width: 100%;
+    margin-top: 30px;
+    padding: 0 10px;
+    padding-bottom: 40px; 
+}
+
+.galeria-fotos h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #e76f87;
+    font-size: 1.6em;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ffedf0;
+}
+
+.grid-fotos {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
+    gap: 15px; 
+    justify-items: center; 
+    margin-bottom: 20px;
+}
+
+.grid-fotos img {
+    width: 100%; 
+    height: 180px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.grid-fotos img:hover {
+    transform: scale(1.03); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.legenda-galeria {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    margin-top: 20px;
+    font-style: italic;
+}
+/* A seção do botão de playlist foi removida daqui */
